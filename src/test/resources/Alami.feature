@@ -13,3 +13,11 @@ Feature: Add to Cart
     And user click Hapus button on cart page
     And user click OK button on delete confirmation pop up
     Then user can see there is no product on cart page
+
+  Scenario: Verify user can search item on category dekorasi rumah
+    Given user open the web page
+    When user click Home and Food
+    And user click Dekorasi rumah
+    And user click elevenia recommended
+    And user click the first item
+    Then user can see the price is "Rp 20.000"

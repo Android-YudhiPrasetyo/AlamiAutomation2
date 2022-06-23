@@ -20,4 +20,5 @@ public class SearchResultStepDef {
   public void userAddItemToCart() {
     AddToCartPage.clickBtnTambahKeCart();
   }
+
 }

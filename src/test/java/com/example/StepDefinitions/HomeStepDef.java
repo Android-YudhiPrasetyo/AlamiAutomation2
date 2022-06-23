@@ -4,6 +4,7 @@ import com.example.base.BaseClass;
 import com.example.page.HomePage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
@@ -28,4 +29,16 @@ public class HomeStepDef extends BaseClass {
   public void userSearchOnSearchBar(String search) {
     HomePage.inputSearchBar(search);
   }
+
+  @When("user click Home and Food")
+  public void userClickHomeAndFood() {
+    HomePage.clickBtnHomeAndFood();
+  }
+
+  @And("user click Dekorasi rumah")
+  public void userClickDekorasiRumah() {
+    HomePage.clickBtnDekorasiRumah();
+  }
+
+
 }
